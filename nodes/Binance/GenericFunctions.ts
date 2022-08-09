@@ -15,11 +15,11 @@ import {
 	NodeOperationError,
 } from 'n8n-workflow';
 
-export async function friendGridApiRequest(this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions,
+export async function binanceApiRequest(this: IHookFunctions | IExecuteFunctions | IExecuteSingleFunctions | ILoadOptionsFunctions,
 	method: string, endpoint: string, body: object = {}, qs: object = {}, uri?: string): Promise<any> { // tslint:disable-line:no-any
 
 	//Get credentials the user provided for this node
-	const credentials = await this.getCredentials('friendGridApi') as IDataObject;
+	const credentials = await this.getCredentials('binanceApi') as IDataObject;
 
 	if (credentials === undefined) {
 		throw new NodeOperationError(this.getNode(), 'No credentials got returned!');
@@ -29,12 +29,14 @@ export async function friendGridApiRequest(this: IHookFunctions | IExecuteFuncti
 	const options: OptionsWithUri = {
 		method,
 		headers: {
-			'Accept': 'application/json',
-			'Authorization': `Bearer ${credentials.apiKey}`,
+			Accept: "application/json",
+			Authorization: `Bearer ${credentials.apiKey}`,
+			apiKey: `${credentials.apiKey}`,
+			secretKey: `${credentials.apiSecret}`,
 		},
 		qs,
 		body,
-		uri: uri || `https://api.sendgrid.com/v3/${endpoint}`,
+		uri: uri || `https://api.binance.com/${endpoint}`,
 		json: true,
 	};
 

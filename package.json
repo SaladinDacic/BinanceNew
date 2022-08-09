@@ -1,16 +1,17 @@
 {
-  "name": "@digital-boss/n8n-nodes-starter",
-  "version": "0.1.0",
-  "description": "FriendGrid support for n8n.",
-  "license": "MIT",
+  "name": "@digital-boss/n8n-nodes-binance",
+  "version": "0.1.6",
+  "description": "Binance support for n8n.",
+  "license": "Apache 2.0",
   "homepage": "https://n8n.io",
   "author": {
-    "name": "Valentina Lilova",
-    "email": "valentina.lilova@digital-boss.de"
+    "name": "Saladin Dacic",
+    "email": "saladindacic@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digital-boss/n8n-nodes-starter.git"
+    "type": "git",
+    "url": "git+https://github.com/SaladinDacic/Binance.git"
   },
   "keywords": [
     "n8n",
@@ -40,10 +41,10 @@
   ],
   "n8n": {
     "credentials": [
-      "dist/credentials/FriendGridApi.credentials.js"
+      "dist/credentials/BinanceApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/FriendGrid/FriendGrid.node.js"
+      "dist/nodes/Binance/Binance.node.js"
     ]
   },
   "devDependencies": {

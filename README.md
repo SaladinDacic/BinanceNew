@@ -2,7 +2,7 @@
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
 
-Example starter module for custom n8n nodes. FriendGrid API example from the n8n documentation is used for this purpose.
+Example starter module for custom n8n nodes. Binance API example from the n8n documentation is used for this purpose.
 This is a TEST node used as a template for node creation.
 
 ## Try it out with docker
@@ -14,6 +14,7 @@ The recommended way is using our docker image [Digital Boss' N8N custom nodes do
 [N8N documentation on custom nodes](https://docs.n8n.io/nodes/creating-nodes/create-n8n-nodes-module.html)
 
 Clone the n8n-nodes-starter repository and execute:
+
 ```
 # Install dependencies
 npm install
@@ -26,6 +27,7 @@ npm link
 ```
 
 Create an N8N installation and add the n8n-nodes-starter to it:
+
 ```
 # Create an N8N installation
 cd ..
@@ -41,6 +43,7 @@ npm link @digital-boss/n8n-nodes-starter
 # Start n8n
 npx n8n
 ```
+
 ## Latest functionality
 
 Displayed the package version in the node description. For reference, you can check [genversion](https://www.npmjs.com/package/genversion).
