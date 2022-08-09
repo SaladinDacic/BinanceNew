@@ -1,8 +1,8 @@
-# n8n-nodes-starter
+# n8n-nodes-binance
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
 
-Example starter module for custom n8n nodes. Binance API example from the n8n documentation is used for this purpose.
+Example binance module for custom n8n nodes. Binance API example from the n8n documentation is used for this purpose.
 This is a TEST node used as a template for node creation.
 
 ## Try it out with docker
@@ -13,7 +13,7 @@ The recommended way is using our docker image [Digital Boss' N8N custom nodes do
 
 [N8N documentation on custom nodes](https://docs.n8n.io/nodes/creating-nodes/create-n8n-nodes-module.html)
 
-Clone the n8n-nodes-starter repository and execute:
+Clone the n8n-nodes-binance repository and execute:
 
 ```
 # Install dependencies
@@ -26,7 +26,7 @@ npm run build
 npm link
 ```
 
-Create an N8N installation and add the n8n-nodes-starter to it:
+Create an N8N installation and add the n8n-nodes-binance to it:
 
 ```
 # Create an N8N installation
@@ -38,7 +38,7 @@ npm install
 npm install n8n
 
 # "Install" the locally published module
-npm link @digital-boss/n8n-nodes-starter
+npm link @digital-boss/n8n-nodes-binance
 
 # Start n8n
 npx n8n
@@ -54,7 +54,7 @@ To make this node even better, please let us know, [how you use it](mailto:info@
 
 ## Issues
 
-If you have any issues, please [let us know on GitHub](https://github.com/digital-boss/n8n-nodes-starter/issues).
+If you have any issues, please [let us know on GitHub](https://github.com/digital-boss/n8n-nodes-binance/issues).
 
 ## About
 
@@ -66,4 +66,4 @@ This node was updated with ❤️ by Valentina Lilova [valentina98](https://gith
 
 ## License
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+[MIT](https://github.com/n8n-io/n8n-nodes-binance/blob/master/LICENSE.md)
